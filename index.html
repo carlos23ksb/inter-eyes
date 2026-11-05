@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inter Eyes Prótesis Oculares | Prótesis oculares a medida en Puebla</title>
+<meta name="description" content="Inter Eyes Prótesis Oculares en Puebla, México. Fabricamos y damos mantenimiento a prótesis oculares hechas a medida. Nadie tiene que saberlo. Cotización por WhatsApp.">
+<meta name="theme-color" content="#0f766e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icon-192.png">
+<style>
+  :root{
+    --teal:#0f766e; --teal-dark:#0b5e57; --blue:#155e75; --ink:#1f2a2e;
+    --muted:#5b6b70; --bg:#ffffff; --soft:#eef7f6; --soft-blue:#eef6f9;
+    --line:#dce8e6; --gold:#a98c4b; --wa:#22a55b; --wa-dark:#1a8a4a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+  img{max-width:100%;display:block}
+  a{color:var(--teal)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 1px 6px rgba(15,118,110,.06)}
+  .head{display:flex;align-items:center;gap:12px;padding:10px 20px;max-width:960px;margin:0 auto}
+  .head img{height:44px;width:auto}
+  .brand{line-height:1.15}
+  .brand b{font-size:20px;color:var(--teal-dark);letter-spacing:.2px}
+  .brand span{display:block;font-size:12.5px;color:var(--muted);letter-spacing:2.5px;text-transform:uppercase}
+  .head .cta{margin-left:auto}
+  /* Buttons */
+  .btn{display:inline-block;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;
+    padding:14px 26px;border-radius:999px;font-size:17px;box-shadow:0 4px 14px rgba(34,165,91,.35);transition:transform .15s,background .15s}
+  .btn:hover{background:var(--wa-dark);transform:translateY(-1px)}
+  .btn.small{padding:9px 18px;font-size:15px}
+  .btn.ghost{background:#fff;color:var(--teal);border:2px solid var(--teal);box-shadow:none}
+  .btn.ghost:hover{background:var(--soft)}
+  /* Hero */
+  .hero{background:linear-gradient(180deg,#eaf6f5 0%,#ffffff 78%);text-align:center;padding:52px 20px 44px}
+  .hero .logo-big{margin:0 auto 18px;max-width:420px}
+  .hero .logo-big img{width:100%;height:auto;margin:0 auto}
+  .hero h1{font-size:clamp(30px,6vw,46px);line-height:1.12;color:var(--teal-dark);margin-bottom:6px}
+  .hero h1 span{display:block;font-size:.55em;color:var(--blue);font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-top:6px}
+  .hero .tag{font-size:20px;color:var(--gold);font-style:italic;margin:10px 0 14px}
+  .hero p.lead{max-width:620px;margin:0 auto 24px;color:var(--muted);font-size:18px}
+  .hero .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .hero .note{margin-top:16px;font-size:14px;color:var(--muted)}
+  /* Sections */
+  section{padding:52px 0}
+  section.alt{background:var(--soft)}
+  section.alt-blue{background:var(--soft-blue)}
+  h2{font-size:clamp(24px,4.5vw,32px);color:var(--teal-dark);margin-bottom:8px;line-height:1.25}
+  h2::after{content:"";display:block;width:56px;height:4px;background:var(--gold);border-radius:2px;margin-top:10px}
+  .sub{color:var(--muted);margin-bottom:22px;max-width:640px}
+  .cols{display:grid;grid-template-columns:1fr;gap:18px}
+  @media(min-width:720px){.cols{grid-template-columns:1fr 1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{color:var(--blue);font-size:19px;margin-bottom:6px}
+  .card p{color:var(--muted)}
+  .card ul{list-style:none}
+  .card li{padding:6px 0 6px 26px;position:relative;color:var(--ink)}
+  .card li::before{content:"";position:absolute;left:2px;top:13px;width:10px;height:10px;border-radius:50%;background:var(--teal)}
+  /* Steps */
+  .steps{counter-reset:step;display:grid;gap:14px}
+  @media(min-width:720px){.steps{grid-template-columns:1fr 1fr}}
+  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;position:relative}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:16px;right:18px;
+    width:38px;height:38px;border-radius:50%;background:var(--soft);color:var(--teal);font-weight:800;
+    display:flex;align-items:center;justify-content:center;font-size:18px}
+  .step h3{color:var(--blue);font-size:19px;margin-bottom:6px;padding-right:48px}
+  .step p{color:var(--muted)}
+  /* Gallery */
+  .gallery{display:grid;gap:18px}
+  @media(min-width:720px){.gallery{grid-template-columns:1fr 1fr}}
+  figure{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  figure img{width:100%;height:auto}
+  figure.wide{grid-column:1/-1}
+  figcaption{padding:14px 18px;font-size:15px;color:var(--muted);text-align:center}
+  figcaption b{color:var(--teal-dark)}
+  .gallery-note{margin-top:16px;font-size:14.5px;color:var(--muted);text-align:center}
+  /* FAQ */
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+  summary{cursor:pointer;font-weight:700;color:var(--teal-dark);font-size:17.5px;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";float:right;color:var(--teal);font-size:22px;line-height:1}
+  details[open ] summary::after{content:"–"}
+  details p{margin-top:10px;color:var(--muted)}
+  /* Contact */
+  .contact{text-align:center}
+  .contact .box{background:linear-gradient(180deg,#eaf6f5,#fff);border:1px solid var(--line);border-radius:20px;padding:36px 22px}
+  .contact h2::after{margin-left:auto;margin-right:auto}
+  .contact p{color:var(--muted);max-width:560px;margin:0 auto 8px}
+  .contact .place{font-size:19px;color:var(--ink);font-weight:700;margin:14px 0 22px}
+  /* Footer */
+  footer{background:var(--teal-dark);color:#d7ecea;text-align:center;padding:26px 20px;font-size:14.5px}
+  footer b{color:#fff}
+  /* Floating WhatsApp */
+  .wa-float{position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;
+    background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.28);text-decoration:none}
+  .wa-float svg{width:32px;height:32px;fill:#fff}
+  /* Reveal on scroll */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head">
+    <img src="img/logo-ojo.jpg" alt="Inter Eyes, emblema del ojo">
+    <div class="brand">
+      <b>Inter Eyes</b>
+      <span>Prótesis Oculares</span>
+    </div>
+    <a class="btn small cta" href="https://wa.me/522226845793?text=Hola%2C%20me%20interesa%20una%20pr%C3%B3tesis%20ocular.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F">WhatsApp</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="logo-big">
+      <img src="img/logo-ojo.jpg" alt="Inter Eyes, emblema del ojo">
+    </div>
+    <h1>Inter Eyes <span>Prótesis Oculares</span></h1>
+    <p class="tag">Nadie tiene que saberlo</p>
+    <p class="lead">Fabricamos y damos mantenimiento a prótesis oculares hechas a medida, para que se vean y se sientan lo más naturales posible.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://wa.me/522226845793?text=Hola%2C%20me%20interesa%20una%20pr%C3%B3tesis%20ocular.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F">Cotiza por WhatsApp</a>
+    </div>
+    <p class="note">Puebla, México &middot; Cotización por WhatsApp</p>
+  </div>
+</div>
+
+<section id="que-es">
+  <div class="wrap reveal">
+    <h2>¿Qué es una prótesis ocular?</h2>
+    <p class="sub">Una prótesis ocular es un ojo artificial hecho a medida que se coloca en la cavidad después de la pérdida de un ojo. No devuelve la vista: devuelve la apariencia natural.</p>
+    <div class="cols">
+      <div class="card">
+        <h3>Hecha para parecerse a su ojo sano</h3>
+        <p>Cada prótesis se elabora para igualar el color, la forma, el tamaño y el brillo del ojo sano, de manera que a simple vista pase desapercibida.</p>
+      </div>
+      <div class="card">
+        <h3>Para niños y adultos</h3>
+        <p>Está pensada para personas de todas las edades que perdieron un ojo por accidente, enfermedad o cirugía, y que desean recuperar su imagen y su confianza.</p>
+      </div>
+      <div class="card">
+        <h3>Una pieza única, para una sola persona</h3>
+        <p>No hay dos prótesis iguales: cada una se fabrica sobre la medida de la cavidad de quien la va a usar, por eso la adaptación es personal.</p>
+      </div>
+      <div class="card">
+        <h3>Comodidad en el uso diario</h3>
+        <p>Una prótesis bien adaptada se puede usar todos los días. En la valoración se explica cómo colocarla, retirarla y cuidarla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="fabricacion">
+  <div class="wrap reveal">
+    <h2>Fabricación a medida</h2>
+    <p class="sub">Así es el proceso general para elaborar una prótesis ocular. Cada caso se valora de forma individual.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Valoración</h3>
+        <p>Se revisa la cavidad y el ojo sano para conocer las medidas, el color y las características que debe tener la prótesis.</p>
+      </div>
+      <div class="step">
+        <h3>Toma de medida</h3>
+        <p>Se toma el molde de la cavidad, que sirve como base para que la prótesis ajuste bien y se sienta cómoda.</p>
+      </div>
+      <div class="step">
+        <h3>Elaboración y pintado a mano</h3>
+        <p>La prótesis se elabora y se pinta a mano, buscando igualar el tono del iris, las venitas y el brillo del ojo sano.</p>
+      </div>
+      <div class="step">
+        <h3>Prueba y ajustes</h3>
+        <p>Se prueba la prótesis puesta y se hacen los ajustes necesarios hasta que la adaptación y la apariencia queden bien.</p>
+      </div>
+    </div>
+    <p style="margin-top:22px;text-align:center">
+      <a class="btn" href="https://wa.me/522226845793?text=Hola%2C%20me%20interesa%20una%20pr%C3%B3tesis%20ocular%20hecha%20a%20medida.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F">Preguntar por una prótesis a medida</a>
+    </p>
+  </div>
+</section>
+
+<section id="mantenimiento">
+  <div class="wrap reveal">
+    <h2>Mantenimiento</h2>
+    <p class="sub">Una prótesis ocular también necesita cuidados para que se conserve bien y siga siendo cómoda.</p>
+    <div class="cols">
+      <div class="card">
+        <h3>Limpieza</h3>
+        <p>La limpieza regular, con los cuidados que se indican en la entrega, ayuda a mantener la prótesis en buen estado.</p>
+      </div>
+      <div class="card">
+        <h3>Pulido</h3>
+        <p>Con el uso, la superficie puede perder brillo. El pulido periódico le devuelve su aspecto liso y natural.</p>
+      </div>
+      <div class="card">
+        <h3>Revisión periódica</h3>
+        <p>En las revisiones se verifica que la prótesis siga adaptando bien y se detecta a tiempo si necesita algún ajuste.</p>
+      </div>
+      <div class="card">
+        <h3>Ajuste o reemplazo con el tiempo</h3>
+        <p>La cavidad puede cambiar con los años, sobre todo en niños en crecimiento. En esos casos la prótesis puede necesitar un ajuste o una nueva elaboración.</p>
+      </div>
+    </div>
+    <p style="margin-top:22px;text-align:center">
+      <a class="btn ghost" href="https://wa.me/522226845793?text=Hola%2C%20me%20interesa%20el%20mantenimiento%20de%20una%20pr%C3%B3tesis%20ocular.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F">Preguntar por mantenimiento</a>
+    </p>
+  </div>
+</section>
+
+<section class="alt-blue" id="resultados">
+  <div class="wrap reveal">
+    <h2>Antes y después</h2>
+    <p class="sub">Ejemplos de resultados con prótesis oculares hechas a medida.</p>
+    <div class="gallery">
+      <figure>
+        <img src="img/antes-despues-nina.jpg" alt="Antes y después de una prótesis ocular en una niña">
+        <figcaption><b>Antes / Después</b> &middot; Prótesis ocular a medida</figcaption>
+      </figure>
+      <figure>
+        <img src="img/antes-despues-nino.jpg" alt="Antes y después de una prótesis ocular en un niño">
+        <figcaption><b>Antes / Después</b> &middot; Prótesis ocular a medida</figcaption>
+      </figure>
+      <figure class="wide">
+        <img src="img/resultado-hombre.jpg" alt="Hombre con prótesis ocular">
+        <figcaption><b>Resultado con prótesis ocular</b> &middot; Apariencia natural en el uso diario</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">Cada persona es diferente: el resultado depende de cada caso y se valora de forma individual.</p>
+  </div>
+</section>
+
+<section id="preguntas">
+  <div class="wrap reveal">
+    <h2>Preguntas frecuentes</h2>
+    <p class="sub">Respuestas claras a las dudas más comunes.</p>
+
+    <details>
+      <summary>¿La prótesis ocular devuelve la vista?</summary>
+      <p>No. La prótesis no devuelve la vista: su función es restaurar la apariencia natural del ojo. La persona sigue viendo con su ojo sano.</p>
+    </details>
+
+    <details>
+      <summary>¿Cada prótesis es diferente?</summary>
+      <p>Sí. Cada prótesis se fabrica a medida para una sola persona, tomando en cuenta su cavidad y las características de su ojo sano.</p>
+    </details>
+
+    <details>
+      <summary>¿La prótesis se mueve?</summary>
+      <p>La prótesis puede acompañar en parte el movimiento del ojo sano y de la cavidad. El grado de movimiento varía en cada persona y se explica en la valoración.</p>
+    </details>
+
+    <details>
+      <summary>¿La elaboración requiere cirugía?</summary>
+      <p>No. La prótesis se adapta sobre la cavidad, sin cirugía. La toma de medida y la adaptación se hacen con cuidado y de forma externa.</p>
+    </details>
+
+    <details>
+      <summary>¿Cada cuánto hay que revisarla?</summary>
+      <p>Se recomienda la revisión periódica. En cada caso se indica cuándo conviene volver, según la edad de la persona y el estado de la prótesis.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo pido una cotización?</summary>
+      <p>Por WhatsApp. Escríbanos contando su caso y con gusto le damos información y los pasos para la valoración.</p>
+    </details>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap reveal">
+    <div class="box">
+      <h2>Contáctenos</h2>
+      <p>¿Tiene dudas o quiere una cotización? Escríbanos por WhatsApp y le atendemos con gusto.</p>
+      <p class="place">Puebla, México</p>
+      <a class="btn" href="https://wa.me/522226845793?text=Hola%2C%20me%20interesa%20una%20pr%C3%B3tesis%20ocular.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F">Cotiza por WhatsApp</a>
+      <p style="margin-top:14px;font-size:14.5px">WhatsApp: +52 222 684 5793</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Inter Eyes &middot; Prótesis Oculares</b><br>
+  Fabricación y mantenimiento de prótesis oculares a medida &middot; Puebla, México
+</footer>
+
+<a class="wa-float" href="https://wa.me/522226845793?text=Hola%2C%20me%20interesa%20una%20pr%C3%B3tesis%20ocular.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 2 6.5L4 29l7.7-2c1.8.9 3.9 1.4 6 1.4h.3c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 24.5c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.6 1.2 1.2-4.5-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7C4.6 9.7 9.6 5.5 16 5.5S27.4 9.7 27.4 16 22.4 27.5 16 27.5zm6.3-8.7c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.8.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.7-.4z"/></svg>
+</a>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+</script>
+</body>
+</html>
