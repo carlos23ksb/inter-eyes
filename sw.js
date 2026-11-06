@@ -1,4 +1,4 @@
-var CACHE = 'inter-eyes-v2';
+var CACHE = 'inter-eyes-v3';
 var FILES = [
   'index.html',
   'manifest.json',

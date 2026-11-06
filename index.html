@@ -81,7 +81,11 @@
   @media(max-width:899px){.gallery{grid-template-columns:1fr}}
   figure{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 6px 20px rgba(15,118,110,.10);cursor:zoom-in;transition:transform .3s ease,box-shadow .3s ease}
   figure:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(15,118,110,.18)}
-  figure img{width:100%;height:auto}
+  figure img{width:100%;height:auto;transition:transform .5s ease}
+  figure:hover img,figure:active img{transform:scale(1.05)}
+  figcaption{transition:transform .5s ease,opacity .5s ease}
+  figure.reveal figcaption{transform:translateY(8px);opacity:.85}
+  figure.reveal.in figcaption{transform:none;opacity:1}
   figure.wide{grid-column:1/-1}
   figcaption{padding:14px 18px;font-size:15px;color:var(--muted);text-align:center}
   figcaption b{color:var(--teal-dark)}
@@ -250,6 +254,30 @@
       <figure class="wide reveal reveal-zoom">
         <img src="img/resultado-hombre.jpg" alt="Hombre con prótesis ocular" loading="lazy">
         <figcaption><b>Resultado con prótesis ocular</b> &middot; Apariencia natural en el uso diario</figcaption>
+      </figure>
+      <figure class="reveal reveal-left">
+        <img src="img/trabajo-2.jpg" alt="Antes y después de una prótesis ocular en un hombre joven" loading="lazy">
+        <figcaption><b>Antes / Después</b> &middot; De un ojo con apariencia distinta a una mirada natural, con su prótesis hecha a medida.</figcaption>
+      </figure>
+      <figure class="reveal reveal-right">
+        <img src="img/trabajo-3.jpg" alt="Antes y después de una prótesis ocular en una mujer" loading="lazy">
+        <figcaption><b>Antes / Después</b> &middot; Arriba, el ojo antes; abajo, ya con su prótesis ocular personalizada.</figcaption>
+      </figure>
+      <figure class="reveal reveal-left">
+        <img src="img/trabajo-5.jpg" alt="Niña antes de su prótesis ocular" loading="lazy">
+        <figcaption><b>Antes</b> &middot; La niña antes de su prótesis, con el ojo derecho de color blanco.</figcaption>
+      </figure>
+      <figure class="reveal reveal-right">
+        <img src="img/trabajo-7.jpg" alt="Niña después de su prótesis ocular" loading="lazy">
+        <figcaption><b>Después</b> &middot; La misma niña ya con su prótesis: sus dos ojos se ven oscuros y naturales.</figcaption>
+      </figure>
+      <figure class="wide reveal reveal-zoom">
+        <img src="img/trabajo-4.jpg" alt="Hombre con bigote y prótesis ocular" loading="lazy">
+        <figcaption><b>Resultado con prótesis ocular</b> &middot; Apariencia natural en el uso diario: a simple vista, no se nota.</figcaption>
+      </figure>
+      <figure class="reveal reveal-left">
+        <img src="img/trabajo-6.jpg" alt="Prótesis ocular en la mano" loading="lazy">
+        <figcaption><b>La prótesis en la mano</b> &middot; Cada pieza se elabora y se pinta a mano, a la medida de cada persona.</figcaption>
       </figure>
     </div>
     <p class="gallery-note">Cada persona es diferente: el resultado depende de cada caso y se valora de forma individual.</p>
